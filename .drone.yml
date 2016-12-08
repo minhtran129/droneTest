@@ -1,7 +1,4 @@
-build:
-  image: ubuntu
-  commands:
-    - echo start
+
 
 deploy:
   ssh:
@@ -10,5 +7,6 @@ deploy:
     user: tran.vuong.minh
     port: 22
     commands:
-      - export DRONE_REPO=DRONE_REPO 
-      - echo DRONE_REPO
+      - echo hello
+      - echo world
+      - echo abc
