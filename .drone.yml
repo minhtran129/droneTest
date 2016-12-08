@@ -1,9 +1,7 @@
 build:
-  image: golang
+  image: ubuntu
   commands:
-    - go get
-    - go build
-    - go test
+    - echo start
 
 deploy:
   ssh:
@@ -12,6 +10,5 @@ deploy:
     user: tran.vuong.minh
     port: 22
     commands:
-      - echo hello
-      - echo world
-      - echo abc
+      - export DRONE_REPO=DRONE_REPO 
+      - echo DRONE_REPO
