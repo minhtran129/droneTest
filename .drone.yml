@@ -1,0 +1,10 @@
+deploy:
+  ssh:
+    host:
+     - 192.168.5.21
+    user: tran.vuong.minh
+    port: 22
+    sleep: 5
+    commands:
+      - echo hello
+      - echo world
