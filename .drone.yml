@@ -1,4 +1,8 @@
-
+build:
+  image: ubuntu
+  commands:
+    - echo start
+	
 
 deploy:
   ssh:
@@ -10,3 +14,5 @@ deploy:
       - echo hello
       - echo world
       - echo abc
+  commands:
+      - echo local
