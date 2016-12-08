@@ -14,5 +14,3 @@ deploy:
       - echo hello
       - echo world
       - echo abc
-  commands:
-      - echo local
