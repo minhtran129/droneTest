@@ -1,16 +1,6 @@
 build:
-  image: ubuntu
+  image: plugins/drone-ssh
   commands:
-    - echo start
+    - ssh tran.vuong.minh@192.168.5.21
 	
 
-deploy:
-  ssh:
-    host:
-     - 192.168.5.21
-    user: tran.vuong.minh
-    port: 22
-    commands:
-      - echo hello
-      - echo world
-      - echo abc
