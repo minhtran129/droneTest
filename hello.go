@@ -1,5 +1,5 @@
 // Our first program will print the classic "hello world"
-// message. Here's the full source code.
+// message. Here's the full source code.asd
 package main
 
 import "fmt"
