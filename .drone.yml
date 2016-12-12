@@ -1,4 +1,4 @@
 build:
-  image: ssh6
+  image: ubuntu
   commands:
-    - ssh -t -t -o "StrictHostKeyChecking no" tran.vuong.minh@192.168.5.21 "security list-keychain && security unlock-keychain -p Minh1209 /Users/tran.vuong.minh/Library/Keychains/login.keychain && cd Documents/Git\ Build/Okan/ && sh Script.sh"
+    - ls -l
