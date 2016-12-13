@@ -1,0 +1,79 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.110.0"
+xcversion(version: "8.0")
+default_platform :ios
+
+platform :ios do
+  before_all do
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+
+    update_app_identifier(
+      xcodeproj: "DroneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
+      plist_path: "Info.plist", # Path to info plist file, relative to xcodeproj
+      app_identifier: "com.FramgiaDMM.okan.okancast" # The App Identifier
+    )
+
+    match(
+      git_url: "https://minhtran1209@bitbucket.org/minhtran1209/match.git",
+      username: "minhtran1209",
+      app_identifier: "com.FramgiaDMM.okan.okancast",
+      type: "development",
+      readonly: true
+    )
+
+    gym(
+      configuration: "Debug",
+      scheme: "DMMOkanAppDev",
+      destination: "generic/platform=iOS",
+      output_name: "DroneTest",
+      output_directory: "Test_build",
+      silent: true,
+      clean: true,
+      use_legacy_build_api: true
+      #export_options: "exportOptions.plist"
+    )
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
