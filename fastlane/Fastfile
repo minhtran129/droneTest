@@ -24,8 +24,8 @@ platform :ios do
   lane :beta do
 
     update_app_identifier(
-      xcodeproj: "DroneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
-      plist_path: "Info.plist", # Path to info plist file, relative to xcodeproj
+      xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
+      plist_path: "droneTest/Info.plist", # Path to info plist file, relative to xcodeproj
       app_identifier: "com.FramgiaDMM.okan.okancast" # The App Identifier
     )
 
@@ -39,9 +39,9 @@ platform :ios do
 
     gym(
       configuration: "Debug",
-      scheme: "DMMOkanAppDev",
+      scheme: "droneTest",
       destination: "generic/platform=iOS",
-      output_name: "DroneTest",
+      output_name: "droneTest",
       output_directory: "Test_build",
       silent: true,
       clean: true,
