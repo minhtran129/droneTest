@@ -1,8 +1,8 @@
 deploy:
   ssh-mac:
-    image: fdplugins/ssh-mac:0.9.6
+    image: fdplugins/ssh-mac:0.9.7
     host: 192.168.5.21
     user: tran.vuong.minh
-    
+
     commands:
       - /.fastlane/bin/fastlane beta
