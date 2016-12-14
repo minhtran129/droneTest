@@ -5,4 +5,5 @@ deploy:
     user: tran.vuong.minh
 
     commands:
+      - pwd
       - ~/.fastlane/bin/fastlane beta
