@@ -1,6 +1,6 @@
 deploy:
   ssh-mac:
-    image: fdplugins/ssh-mac:0.10.17
+    image: fdplugins/ssh-mac:0.10.18
     host: 192.168.5.21
     user: tran.vuong.minh
 
