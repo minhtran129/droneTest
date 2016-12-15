@@ -4,7 +4,6 @@ deploy:
     host: 192.168.5.21
     user: tran.vuong.minh
     keychain: Minh1209
-
-    commands:
-      - pwd
-      - ~/.fastlane/bin/fastlane beta
+    swiftlint: true
+    oclint: false
+    fastlane: beta
