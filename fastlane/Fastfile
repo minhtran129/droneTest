@@ -30,6 +30,7 @@ platform :ios do
     )
     scan(
       scheme: "droneTest",
+      device: "iPhone 7",
       clean: true
     )
     update_app_identifier(
