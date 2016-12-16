@@ -24,9 +24,13 @@ platform :ios do
   lane :beta do
     swiftlint(
       mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
-      output_file: "checkstyle.xml", # The path of the output file (optional)
+      output_file: ".framgia-ci-reports/swiftlint.xml", # The path of the output file (optional)
       config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
       ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+    )
+    scan(
+      scheme: "droneTest",
+      clean: true
     )
     update_app_identifier(
       xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
