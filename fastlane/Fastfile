@@ -55,8 +55,8 @@ platform :ios do
       output_directory: "Test_build",
       silent: true,
       clean: true,
-      use_legacy_build_api: true
-      #export_options: "exportOptions.plist"
+      # use_legacy_build_api: true
+      # export_options: "exportOptions.plist"
     )
 
     # sh "your_script.sh"
