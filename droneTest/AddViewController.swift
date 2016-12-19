@@ -14,6 +14,7 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("123123123 123123 123 12312 3123 12312312312312 312 12 3123 123 12312 3123 1231 23123123 123 123 1231 2312 3123 13123 1231231 312 3123 123 123 12")
     }
 
     override func didReceiveMemoryWarning() {
