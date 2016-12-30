@@ -1,5 +1,5 @@
 build:
-  image: fdplugins/remote-build:0.4.1
+  image: fdplugins/remote-build:0.4.2
   commands:
     - printenv
     - sh ~/remote_build.sh
