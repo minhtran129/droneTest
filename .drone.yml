@@ -3,6 +3,7 @@ build:
   commands:
     - printenv
     - ls -l
+    - ruby ~/remote_build.rb
 
   environment:
     - USER_NAME="tran.vuong.minh"
