@@ -2,7 +2,7 @@ build:
   image: fdplugins/remote-build:0.3.5
   commands:
     - printenv
-    - sh ~/remote_build.rb
+    - sh ~/remote_build.sh
 
   environment:
     - USER_NAME="tran.vuong.minh"
