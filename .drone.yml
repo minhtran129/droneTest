@@ -1,9 +1,21 @@
-deploy:
-  ssh-mac:
-    image: fdplugins/remote-build:0.3.1
-    host: 192.168.5.21
-    user: tran.vuong.minh
-    keychain: Minh1209
-    swiftlint: true
-    oclint: false
-    fastlane: beta
+build:
+  image: fdplugins/remote-build:0.3.1
+  commands:
+    - printenv
+
+  environment:
+    - USER_NAME="tran.vuong.minh"
+    - USER_PASSWORD="Minh1209"
+    - KEY_CHAIN_PASS="Minh1209"
+    - REMOTE_IP="192.168.5.21"
+    - FASTLANE="beta"
+
+# deploy:
+#   ssh-mac:
+#     image: fdplugins/remote-build:0.3.1
+#     host: 192.168.5.21
+#     user: tran.vuong.minh
+#     keychain: Minh1209
+#     swiftlint: true
+#     oclint: false
+#     fastlane: beta
