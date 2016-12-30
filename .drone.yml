@@ -2,6 +2,7 @@ build:
   image: fdplugins/remote-build:0.3.1
   commands:
     - printenv
+    - ls -l
 
   environment:
     - USER_NAME="tran.vuong.minh"
