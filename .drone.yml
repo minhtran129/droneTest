@@ -5,9 +5,8 @@ build:
     - framgia-ci report
 
   environment:
-    - USER_NAME=ci
-    - USER_PASSWORD=123456
-    - KEY_CHAIN_PASS=123456
+    - USER_NAME=tran.vuong.minh
+    - KEY_CHAIN_PASS=Minh1209
     - REMOTE_IP=192.168.5.12
     - FASTLANE=beta
 
