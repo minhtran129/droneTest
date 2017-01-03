@@ -28,12 +28,12 @@ platform :ios do
       config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
       ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
     )
-    # scan(
-    #   scheme: "droneTest",
-    #   device: "iPhone 7",
-    #   clean: true,
-    #   output_directory: ".framgia-ci-reports/"
-    # )
+    scan(
+      scheme: "droneTest",
+      device: "iPhone 7",
+      clean: true,
+      output_directory: ".framgia-ci-reports/"
+    )
     update_app_identifier(
       xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
       plist_path: "droneTest/Info.plist", # Path to info plist file, relative to xcodeproj
