@@ -1,8 +1,8 @@
 build:
-  image: fdplugins/remote-build:0.5.1
+  image: fdplugins/remote-build:0.5.2
   commands:
-    - printenv
     - ruby ~/remote_build.rb
+    - framgia-ci report
 
   environment:
     - USER_NAME=tran.vuong.minh
