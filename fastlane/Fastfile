@@ -43,7 +43,7 @@ platform :ios do
     match(
       git_url: "https://minhtran1209@bitbucket.org/minhtran1209/match.git",
       username: "minhtran1209",
-      git_branch: "DMM",
+      # git_branch: "DMM",
       app_identifier: "com.FramgiaDMM.okan.okancast",
       type: "development",
       readonly: true
