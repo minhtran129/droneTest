@@ -2,4 +2,4 @@ project_type: android
 test:
   swift-lint:
     ignore: true
-    command: swiftlint lint
+    command: swiftlint lint --config .swiftlint.yml > .framgia-ci-reports/swift-lint.xml

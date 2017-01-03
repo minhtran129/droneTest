@@ -2,6 +2,8 @@ build:
   image: fdplugins/remote-build:0.5.3
   commands:
     - ruby ~/remote_build.rb
+    - framgia-ci report
+    - framgia-ci finish
 
   environment:
     - USER_NAME=tran.vuong.minh
