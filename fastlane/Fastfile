@@ -22,7 +22,7 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
-    sh "bash ../ci_command.sh"
+    # sh "bash ../ci_command.sh"
     # swiftlint(
     #   mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
     #   output_file: ".framgia-ci-reports/swift-lint.xml", # The path of the output file (optional)

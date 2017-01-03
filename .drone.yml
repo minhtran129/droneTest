@@ -1,5 +1,5 @@
 build:
-  image: fdplugins/remote-build:0.5.3
+  image: fdplugins/remote-build:0.5.4
   commands:
     - ruby ~/remote_build.rb
     - framgia-ci report
