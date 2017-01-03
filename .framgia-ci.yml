@@ -2,4 +2,4 @@ project_type: android
 test:
   swift-lint:
     ignore: true
-    command:
+    command: swiftlint lint
