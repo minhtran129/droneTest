@@ -7,7 +7,7 @@ build:
 
   environment:
     # config remote build machine and user
-    - USER_NAME=test02
+    - USER_NAME=test03
     - KEY_CHAIN=xcode
     - KEY_CHAIN_PASS=Aa@123456
     - REMOTE_IP=10.0.1.119
