@@ -1,17 +1,16 @@
 build:
-  image: fdplugins/remote-build:0.5.8
+  image: fdplugins/remote-build:0.5.9
   commands:
     - ruby ~/remote_build.rb
     - framgia-ci report
     - framgia-ci finish
 
   environment:
-    - USER_NAME=tran.vuong.minh
-    - KEY_CHAIN_PASS=Minh1209
-    - REMOTE_IP=192.168.5.12
-    - FASTLANE=beta
-    - FRAMGIA_CI=test
-
+    - USER_NAME=test02
+    - KEY_CHAIN_PASS=Aa@123456
+    - REMOTE_IP=10.0.1.119
+    - BUILD_BRANCH=master
+    - BUILD_LANE=beta
 # deploy:
 #   ssh-mac:
 #     image: fdplugins/remote-build:0.3.1
