@@ -47,14 +47,14 @@ platform :ios do
     )
 
     match(
+      keychain_name: "xcode",
+      keychain_password: "Aa@123456",
       git_url: "git@bitbucket.org:minhtran1209/match.git",
       username: "minhtran1209",
       # git_branch: "DMM",
       app_identifier: "com.FramgiaDMM.okan.okancast",
       type: "development",
       readonly: true
-      # keychain_name: "login",
-      # keychain_password: "Aa@123456"
     )
 
     gym(
