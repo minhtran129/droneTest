@@ -425,8 +425,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FramgiaDMM.okan.okancast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "60a525cd-5b23-4146-bd2f-532e3df393cb";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.FramgiaDMM.okan.okancast";
+				PROVISIONING_PROFILE = "234c3928-ce37-4713-93bc-4e4174626528";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.FramgiaDMM.okan.okancast 1483519321";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -441,8 +441,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FramgiaDMM.okan.okancast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "60a525cd-5b23-4146-bd2f-532e3df393cb";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.FramgiaDMM.okan.okancast";
+				PROVISIONING_PROFILE = "234c3928-ce37-4713-93bc-4e4174626528";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.FramgiaDMM.okan.okancast 1483519321";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
