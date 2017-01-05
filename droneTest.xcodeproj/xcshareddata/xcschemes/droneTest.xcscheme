@@ -56,6 +56,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C179A4881DFFF70B007EB47A"
+               BuildableName = "droneTestTests.xctest"
+               BlueprintName = "droneTestTests"
+               ReferencedContainer = "container:droneTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C179A4931DFFF70B007EB47A"
+               BuildableName = "droneTestUITests.xctest"
+               BlueprintName = "droneTestUITests"
+               ReferencedContainer = "container:droneTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
