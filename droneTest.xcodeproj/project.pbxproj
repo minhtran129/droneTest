@@ -200,7 +200,7 @@
 					C179A4711DFFF70B007EB47A = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 32MSK5YDT8;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					C179A4881DFFF70B007EB47A = {
 						CreatedOnToolsVersion = 8.2;
@@ -425,6 +425,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FramgiaDMM.okan.okancast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "60a525cd-5b23-4146-bd2f-532e3df393cb";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.FramgiaDMM.okan.okancast";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -439,6 +441,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FramgiaDMM.okan.okancast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "60a525cd-5b23-4146-bd2f-532e3df393cb";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.FramgiaDMM.okan.okancast";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
