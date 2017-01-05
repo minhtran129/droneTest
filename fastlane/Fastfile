@@ -14,13 +14,31 @@
 fastlane_version "1.110.0"
 xcversion(version: "~> 8.0")
 default_platform :ios
-FASTLANE_OPT_OUT_USAGE=1
 platform :ios do
   before_all do
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
+
+  lane :lint do
+    swiftlint(
+      mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
+      output_file: ".framgia-ci-reports/swift-lint.xml", # The path of the output file (optional)
+      config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
+      ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+    )
+  end
+
+  lane :test do
+    scan(
+      scheme: "droneTest",
+      device: "iPhone 7",
+      clean: true,
+      output_directory: ".framgia-ci-reports/"
+    )
+  end
+
   lane :beta do
     # sh "bash ../ci_command.sh"
     # swiftlint(
@@ -48,6 +66,14 @@ platform :ios do
       app_identifier: "com.FramgiaDMM.okan.okancast",
       type: "development",
       readonly: true
+    )
+
+    sigh(
+      development: true,
+      force: true,
+      username: "Minh Tran",
+      app_identifier: "com.FramgiaDMM.okan.okancast",
+      provisioning_name: "match Development com.FramgiaDMM.okan.okancast 1483519321",
     )
 
     gym(

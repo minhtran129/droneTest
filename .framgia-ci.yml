@@ -1,5 +1,9 @@
 project_type: android
 test:
-  swift-lint:
+  checksytle:
     ignore: true
-    command: swiftlint lint --config .swiftlint.yml > .framgia-ci-reports/swift-lint.xml
+    command: fastlane lint
+
+  test:
+    ignore: false
+    command: fastlane test
