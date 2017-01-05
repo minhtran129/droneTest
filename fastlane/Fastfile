@@ -40,53 +40,40 @@ platform :ios do
   end
 
   lane :beta do
-    # sh "bash ../ci_command.sh"
-    # swiftlint(
-    #   mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
-    #   output_file: ".framgia-ci-reports/swift-lint.xml", # The path of the output file (optional)
-    #   config_file: ".swiftlint.yml",     # The path of the configuration file (optional)
-    #   ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+    # update_app_identifier(
+    #   xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
+    #   plist_path: "droneTest/Info.plist", # Path to info plist file, relative to xcodeproj
+    #   app_identifier: "com.FramgiaDMM.okan.okancast" # The App Identifier
     # )
-    # scan(
+    #
+    # match(
+    #   git_url: "git@bitbucket.org:minhtran1209/match.git",
+    #   username: "minhtran1209",
+    #   # git_branch: "DMM",
+    #   app_identifier: "com.FramgiaDMM.okan.okancast",
+    #   type: "development",
+    #   readonly: true
+    # )
+    #
+    # sigh(
+    #   development: true,
+    #   force: true,
+    #   username: "Minh Tran",
+    #   app_identifier: "com.FramgiaDMM.okan.okancast",
+    #   provisioning_name: "match Development com.FramgiaDMM.okan.okancast 1483519321",
+    # )
+    #
+    # gym(
+    #   configuration: "Debug",
     #   scheme: "droneTest",
-    #   device: "iPhone 7",
+    #   destination: "generic/platform=iOS",
+    #   output_name: "droneTest",
+    #   output_directory: "Test_build",
+    #   silent: true,
     #   clean: true,
-    #   output_directory: ".framgia-ci-reports/"
+    #   # use_legacy_build_api: true
+    #   # export_options: "exportOptions.plist"
     # )
-    update_app_identifier(
-      xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
-      plist_path: "droneTest/Info.plist", # Path to info plist file, relative to xcodeproj
-      app_identifier: "com.FramgiaDMM.okan.okancast" # The App Identifier
-    )
-
-    match(
-      git_url: "git@bitbucket.org:minhtran1209/match.git",
-      username: "minhtran1209",
-      # git_branch: "DMM",
-      app_identifier: "com.FramgiaDMM.okan.okancast",
-      type: "development",
-      readonly: true
-    )
-
-    sigh(
-      development: true,
-      force: true,
-      username: "Minh Tran",
-      app_identifier: "com.FramgiaDMM.okan.okancast",
-      provisioning_name: "match Development com.FramgiaDMM.okan.okancast 1483519321",
-    )
-
-    gym(
-      configuration: "Debug",
-      scheme: "droneTest",
-      destination: "generic/platform=iOS",
-      output_name: "droneTest",
-      output_directory: "Test_build",
-      silent: true,
-      clean: true,
-      # use_legacy_build_api: true
-      # export_options: "exportOptions.plist"
-    )
 
     # sh "your_script.sh"
     # You can also use other beta testing services here (run `fastlane actions`)
