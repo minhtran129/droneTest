@@ -4,6 +4,6 @@ test:
     ignore: true
     command: fastlane lint
 
-  test:
-    ignore: false
-    command: fastlane test
+  # test:
+  #   ignore: false
+  #   command: fastlane test
