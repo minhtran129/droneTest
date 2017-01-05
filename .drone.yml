@@ -6,9 +6,11 @@ build:
     - framgia-ci finish
 
   environment:
+    # config remote build machine and user
     - USER_NAME=test01
-    - KEY_CHAIN_PASS=Aa@123456
+    - KEY_CHAIN_PASS=Aa@1234567
     - REMOTE_IP=10.0.1.119
+    # config beta build. When push event to branch
     - BUILD_BRANCH=master
     - BUILD_LANE=beta
 # deploy:
