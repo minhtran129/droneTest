@@ -6,7 +6,7 @@ build:
     - framgia-ci finish
 
   environment:
-    - USER_NAME=test02
+    - USER_NAME=test01
     - KEY_CHAIN_PASS=Aa@123456
     - REMOTE_IP=10.0.1.119
     - BUILD_BRANCH=master
