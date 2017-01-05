@@ -8,7 +8,7 @@ build:
   environment:
     # config remote build machine and user
     - USER_NAME=test01
-    - KEY_CHAIN_PASS=Aa@123456
+    - KEY_CHAIN_PASS=123456
     - REMOTE_IP=10.0.1.119
     # config beta build. When push event to branch
     - BUILD_BRANCH=master
