@@ -52,7 +52,9 @@ platform :ios do
       # git_branch: "DMM",
       app_identifier: "com.FramgiaDMM.okan.okancast",
       type: "development",
-      readonly: true
+      readonly: true,
+      keychain_name: "xcode",
+      keychain_password: "Aa@123456"
     )
 
     gym(
