@@ -40,43 +40,30 @@ platform :ios do
   end
 
   lane :beta do
-    # update_app_identifier(
-    #   xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
-    #   plist_path: "droneTest/Info.plist", # Path to info plist file, relative to xcodeproj
-    #   app_identifier: "com.FramgiaDMM.okan.okancast" # The App Identifier
-    # )
-    #
-    # match(
-    #   git_url: "git@bitbucket.org:minhtran1209/match.git",
-    #   username: "minhtran1209",
-    #   # git_branch: "DMM",
-    #   app_identifier: "com.FramgiaDMM.okan.okancast",
-    #   type: "development",
-    #   readonly: true
-    # )
-    #
-    # sigh(
-    #   development: true,
-    #   force: true,
-    #   username: "Minh Tran",
-    #   app_identifier: "com.FramgiaDMM.okan.okancast",
-    #   provisioning_name: "match Development com.FramgiaDMM.okan.okancast 1483519321",
-    # )
-    #
-    # gym(
-    #   configuration: "Debug",
-    #   scheme: "droneTest",
-    #   destination: "generic/platform=iOS",
-    #   output_name: "droneTest",
-    #   output_directory: "Test_build",
-    #   silent: true,
-    #   clean: true,
-    #   # use_legacy_build_api: true
-    #   # export_options: "exportOptions.plist"
-    # )
+    update_app_identifier(
+      xcodeproj: "droneTest.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
+      plist_path: "droneTest/Info.plist", # Path to info plist file, relative to xcodeproj
+      app_identifier: "com.FramgiaDMM.okan.okancast" # The App Identifier
+    )
 
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
+    match(
+      git_url: "git@bitbucket.org:minhtran1209/match.git",
+      username: "minhtran1209",
+      # git_branch: "DMM",
+      app_identifier: "com.FramgiaDMM.okan.okancast",
+      type: "development",
+      readonly: true
+    )
+
+    gym(
+      configuration: "Debug",
+      scheme: "droneTest",
+      destination: "generic/platform=iOS",
+      output_name: "droneTest",
+      output_directory: "Test_build",
+      silent: true,
+      clean: true,
+    )
   end
 
   # You can define as many lanes as you want
