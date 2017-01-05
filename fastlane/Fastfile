@@ -47,8 +47,8 @@ platform :ios do
     )
 
     match(
-      keychain_name: "xcode.keychain",
-      keychain_password: "Aa@123456",
+      # keychain_name: "xcode.keychain",
+      # keychain_password: "Aa@123456",
       git_url: "git@bitbucket.org:minhtran1209/match.git",
       username: "minhtran1209",
       # git_branch: "DMM",
