@@ -39,7 +39,7 @@ platform :ios do
         "CODE_SIGNING_REQUIRED" => "NO",
         "CODE_SIGN_IDENTITY" => ""
       }
-  )
+    )
   end
 
   lane :test do
