@@ -30,7 +30,7 @@ platform :ios do
     )
   end
 
-  lane: build do
+  lane :build do
     xcodebuild(
       xcodeproj: "droneTest.xcodeproj",
       scheme: "droneTest",
