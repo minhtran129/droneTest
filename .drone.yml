@@ -8,6 +8,7 @@ build:
 
   environment:
     # config remote build machine and user
+    - SSH_KEY=$$SSH_KEY
     - USER_NAME=$$USER_NAME
     - KEY_CHAIN=$$KEY_CHAIN
     - KEY_CHAIN_PASS=$$KEY_CHAIN_PASS
