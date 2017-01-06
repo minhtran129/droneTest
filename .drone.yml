@@ -1,5 +1,5 @@
 build:
-  image: fdplugins/remote-build:0.6.3
+  image: fdplugins/remote-build:0.6.4
   commands:
     - printenv
     - ruby ~/remote_build.rb
