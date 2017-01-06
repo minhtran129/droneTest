@@ -30,6 +30,17 @@ platform :ios do
     )
   end
 
+  lane: build do
+    xcodebuild(
+      xcodeproj: "droneTest.xcodeproj",
+      scheme: "droneTest",
+      configuration: "Debug",
+      clean: true,
+      build: true,
+      destination: "generic/platform=iOS\" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=\""
+  )
+  end
+
   lane :test do
     scan(
       scheme: "droneTest",

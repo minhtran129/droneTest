@@ -1,5 +1,8 @@
 project_type: android
 test:
+  build:
+    ignore: true
+    command: fastlane build
   checksytle:
     ignore: true
     command: fastlane lint
