@@ -34,7 +34,11 @@ platform :ios do
       configuration: "Debug",
       clean: true,
       build: true,
-      destination: "generic/platform=iOS\" CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=\""
+      destination: "generic/platform=iOS",
+      build_settings: {
+        "CODE_SIGNING_REQUIRED" => "NO",
+        "CODE_SIGN_IDENTITY" => ""
+      }
   )
   end
 
@@ -43,6 +47,7 @@ platform :ios do
       scheme: "droneTest",
       device: "iPhone 7",
       clean: true,
+      skip_build: true,
       output_directory: ".framgia-ci-reports/"
     )
   end
