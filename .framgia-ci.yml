@@ -1,12 +1,13 @@
 project_type: android
 test:
-  build:
-    ignore: true
-    command: fastlane build
   checksytle:
     ignore: true
     command: fastlane lint
 
-  # test:
-  #   ignore: false
-  #   command: fastlane test
+  build:
+    ignore: true
+    command: fastlane build
+
+  test:
+    ignore: false
+    command: fastlane test
